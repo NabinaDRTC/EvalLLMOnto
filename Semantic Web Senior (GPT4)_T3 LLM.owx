@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/ontology">
+    <Prefix name="" IRI="http://example.org/ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grandparent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TouristSpot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#University"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#discussesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studiesAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#visits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOccupation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPosition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#visitDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DellInternational"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DepartmentOfBiotechnology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GauthamHedge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LalbaghGarden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LalithaHedge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProfessorRammayyaRanjanIyer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RameshHedge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReenaHedge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UVCE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisitLalbagh"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:hasAge"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:hasOccupation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:hasPosition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:visitDate"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Department"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grandparent"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professional"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TouristSpot"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#University"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visit"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#DellInternational"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Department"/>
+        <NamedIndividual IRI="#DepartmentOfBiotechnology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#GauthamHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professional"/>
+        <NamedIndividual IRI="#GauthamHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TouristSpot"/>
+        <NamedIndividual IRI="#LalbaghGarden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#LalithaHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#LalithaHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grandparent"/>
+        <NamedIndividual IRI="#ProfessorRammayyaRanjanIyer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#ProfessorRammayyaRanjanIyer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Child"/>
+        <NamedIndividual IRI="#RameshHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Child"/>
+        <NamedIndividual IRI="#ReenaHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#ReenaHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#University"/>
+        <NamedIndividual IRI="#UVCE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visit"/>
+        <NamedIndividual IRI="#VisitLalbagh"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#discussesWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studiesAt"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#visits"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksAt"/>
+        <Class IRI="#Professional"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#discussesWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#studiesAt"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#visits"/>
+        <Class IRI="#TouristSpot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksAt"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOccupation"/>
+        <Class IRI="#Professional"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPosition"/>
+        <Class IRI="#Professor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#visitDate"/>
+        <Class IRI="#Visit"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOccupation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPosition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#visitDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#DellInternational</IRI>
+        <Literal>Dell International Pvt. Ltd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#DepartmentOfBiotechnology</IRI>
+        <Literal>Department of Biotechnology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasAge"/>
+        <IRI>#GauthamHedge</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#GauthamHedge</IRI>
+        <Literal>Gautham Hedge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasOccupation"/>
+        <IRI>#GauthamHedge</IRI>
+        <Literal>Data Analyst</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#LalbaghGarden</IRI>
+        <Literal>Lalbagh Garden</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasAge"/>
+        <IRI>#LalithaHedge</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">53</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#LalithaHedge</IRI>
+        <Literal>Lalitha Hedge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasPosition"/>
+        <IRI>#LalithaHedge</IRI>
+        <Literal>Associate Professor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasAge"/>
+        <IRI>#ProfessorRammayyaRanjanIyer</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">85</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#ProfessorRammayyaRanjanIyer</IRI>
+        <Literal>Professor Rammayya Ranjan Iyer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasPosition"/>
+        <IRI>#ProfessorRammayyaRanjanIyer</IRI>
+        <Literal>Retired Professor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasAge"/>
+        <IRI>#RameshHedge</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#RameshHedge</IRI>
+        <Literal>Ramesh Hedge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasAge"/>
+        <IRI>#ReenaHedge</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#ReenaHedge</IRI>
+        <Literal>Reena Hedge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasName"/>
+        <IRI>#UVCE</IRI>
+        <Literal>University of Visvesvaraya College of Engineering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasPosition"/>
+        <IRI>#UVCE</IRI>
+        <Literal>Established in 1917</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:visitDate"/>
+        <IRI>#VisitLalbagh</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-04-27</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

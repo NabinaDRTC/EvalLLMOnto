@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="http://www.example.org/ontologies/family#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class abbreviatedIRI=":Occupation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Place"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":isGrandparentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":marriedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":spentLeisureTimeWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":visited"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":worksAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasEstablishedYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasOccupation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":hasVisitDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":GauthamHedge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":RameshHedge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ProfessorIyer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":DrLalithaHedge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":LalbaghGarden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":UVCE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":ReenaHedge"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Person"/>
+        <NamedIndividual abbreviatedIRI=":DrLalithaHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Person"/>
+        <NamedIndividual abbreviatedIRI=":GauthamHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Place"/>
+        <NamedIndividual abbreviatedIRI=":LalbaghGarden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Person"/>
+        <NamedIndividual abbreviatedIRI=":ProfessorIyer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Person"/>
+        <NamedIndividual abbreviatedIRI=":RameshHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Person"/>
+        <NamedIndividual abbreviatedIRI=":ReenaHedge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Organization"/>
+        <NamedIndividual abbreviatedIRI=":UVCE"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":worksAt"/>
+        <NamedIndividual abbreviatedIRI=":DrLalithaHedge"/>
+        <NamedIndividual abbreviatedIRI=":UVCE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasParent"/>
+        <NamedIndividual abbreviatedIRI=":ReenaHedge"/>
+        <NamedIndividual abbreviatedIRI=":DrLalithaHedge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasParent"/>
+        <NamedIndividual abbreviatedIRI=":ReenaHedge"/>
+        <NamedIndividual abbreviatedIRI=":GauthamHedge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":spentLeisureTimeWith"/>
+        <NamedIndividual abbreviatedIRI=":ReenaHedge"/>
+        <NamedIndividual abbreviatedIRI=":ProfessorIyer"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasAge"/>
+        <NamedIndividual abbreviatedIRI=":DrLalithaHedge"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasOccupation"/>
+        <NamedIndividual abbreviatedIRI=":DrLalithaHedge"/>
+        <Literal>Associate Professor at UVCE, Bengaluru</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasAge"/>
+        <NamedIndividual abbreviatedIRI=":GauthamHedge"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasOccupation"/>
+        <NamedIndividual abbreviatedIRI=":GauthamHedge"/>
+        <Literal>Data Analyst at Dell International Pvt. Ltd, Bengaluru</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasOccupation"/>
+        <NamedIndividual abbreviatedIRI=":LalbaghGarden"/>
+        <Literal>Tourist spot in Bengaluru</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasVisitDate"/>
+        <NamedIndividual abbreviatedIRI=":LalbaghGarden"/>
+        <Literal>April 27, 2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasAge"/>
+        <NamedIndividual abbreviatedIRI=":ProfessorIyer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasOccupation"/>
+        <NamedIndividual abbreviatedIRI=":ProfessorIyer"/>
+        <Literal>Retired professor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasAge"/>
+        <NamedIndividual abbreviatedIRI=":RameshHedge"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasAge"/>
+        <NamedIndividual abbreviatedIRI=":ReenaHedge"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasOccupation"/>
+        <NamedIndividual abbreviatedIRI=":ReenaHedge"/>
+        <Literal>Ph.D. student in Biochemistry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasEstablishedYear"/>
+        <NamedIndividual abbreviatedIRI=":UVCE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1917</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasOccupation"/>
+        <NamedIndividual abbreviatedIRI=":UVCE"/>
+        <Literal>Bengaluru</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":hasOccupation"/>
+        <NamedIndividual abbreviatedIRI=":UVCE"/>
+        <Literal>Government Engineering College</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
